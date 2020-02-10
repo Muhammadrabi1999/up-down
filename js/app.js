@@ -48,7 +48,7 @@ purchaseAddButtonEl.onclick = evt => {
 
     const purchaseUpButtonEl = purchaseEl.querySelector('[data-action=up]');
     purchaseUpButtonEl.onclick = () => {
-        if (purchaseEl == purchaseEl.parentElement.firstElementChild) {
+        if (purchaseEl == purchaseEl.parentElement.firstElementChild) { // Вот я исправиль ощибка которые вы написали на github 
             purchasesListEl.insertBefore(purchaseEl, null);
         }
         else{
@@ -58,7 +58,7 @@ purchaseAddButtonEl.onclick = evt => {
 
     const purchaseDownButtonEl = purchaseEl.querySelector('[data-action=down]');
     purchaseDownButtonEl.onclick = () => {
-        if (purchaseEl == purchaseEl.parentElement.lastElementChild) {
+        if (purchaseEl == purchaseEl.parentElement.lastElementChild) { // Вот я исправиль ощибка которые вы написали на github
             purchasesListEl.insertBefore(purchaseEl, purchasesListEl.firstElementChild);
         }
         else{
